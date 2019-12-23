@@ -11,7 +11,7 @@ body{
 }
 
 header {
-    background-image: url(../Notify/images/banner.png);
+    background-image: url(images/banner.png);
     background-size: cover;
     background-position: center;
     grid-area: banner;
