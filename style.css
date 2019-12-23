@@ -1,0 +1,361 @@
+body{
+    display: grid;
+    grid-template-areas:'navbar'
+                        'banner'
+                        'main'
+                        'section'
+                        'contact'
+                        'footer';
+    grid-template-columns: 100%;
+    margin: 0;
+}
+
+header {
+    background-image: url(../Notify/images/banner.png);
+    background-size: cover;
+    background-position: center;
+    grid-area: banner;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px 0 200px;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 38pt;
+    display: flex;
+}
+
+header p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+}
+
+.imagens-cima {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ios  {
+    background-color: black;
+    border: rgba(0, 0, 0, .5) solid;
+    border-radius: 100%;
+    border-width: 15px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.android {
+    background-color: black;
+    border: rgba(0, 0, 0, .5) solid;
+    border-radius: 100%;
+    border-width: 15px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.windows {
+    background-color: black;
+    border: rgba(0, 0, 0, .5) solid;
+    border-radius: 100%;
+    border-width: 15px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.windows:hover {
+    opacity: 1;
+    background-color: limegreen;
+    border: limegreen solid;
+    border-radius: 100%;
+    border-width: 15px;
+    transition: .5s;
+}
+
+.ios:hover {
+    opacity: 1;
+    background-color: limegreen;
+    border: limegreen solid;
+    border-radius: 100%;
+    border-width: 15px;
+    transition: .5s;
+}
+
+.android:hover {
+    opacity: 1;
+    background-color: limegreen;
+    border: limegreen solid;
+    border-radius: 100%;
+    border-width: 15px;
+    transition: .5s;
+}
+
+.imagem-mao {
+    height: 410px;
+}
+
+#cabecalho {
+    background-color: white;
+}
+
+.teste {
+    display: flex;
+    padding: 40px;
+    padding: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+.ferramenta {
+    text-align: center;
+    font-weight: 100;
+}
+
+.estrela {
+    text-align: center;
+    padding: 0 200px 0 200px;
+    font-weight: 100;
+}
+
+.world {
+    text-align: center;
+    font-weight: 100;
+}
+
+.titulo {
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    width: 350px;
+}
+nav {
+    grid-area: navbar;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: limegreen;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fundo {
+    background-color: gainsboro;
+}
+
+section .sect-video{
+    grid-area: section;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0px 39px 37px 22px;
+}
+section .sect-video div {
+    margin-left: 50px;
+}
+
+.sect-video {
+    padding: 60px;
+}
+
+.esquerda {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    padding: 34px 43px 0 0;
+}
+
+.esquerda p {
+    font-size: 10pt;
+    font-weight: 100;
+}
+
+#email {
+    border: white 13px solid;
+    border-radius: 13px 0 0px 13px;
+    color: grey;
+    padding: 0 13px 0 13px;
+}
+input::placeholder {
+    color: grey;
+    font-size: 13px;
+}
+
+.notify {
+    background-color: #2DCC70;
+    border: 13px solid #2DCC70;
+    border-radius: 0 13px 13px 0;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 0 13px 0 13px;
+    margin: -4px;
+    cursor: pointer;
+}
+
+.notify:hover {
+    background-color: green;
+    border: 13px solid green;
+    border-radius: 0 13px 13px 0;
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 0 13px 0 13px;
+    margin: -4px;
+}
+
+.video {
+    margin: 64px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+#contato {
+    grid-area: contact;
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+#contato div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    header{
+        background-image: url(../imagens-base/gif-01.gif);
+        background-position: center;
+        height: 530px;
+    }
+    section .funcionarios{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    section .sect-video {
+        flex-direction: column;
+    }
+    section .sect-video img{
+        flex-direction: column;
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    header{
+        background-image: url(../imagens-base/ricardin-clone.jpeg);
+        background-position: center;
+    }
+    section .sect-video {
+        flex-direction: column;
+    }
+    section .sect-video div {
+        flex-direction: column;
+    }
+}
+
+.verde {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+} 
+
+#imagenss {
+    padding: 44px;
+    text-align: center;
+}
+
+.ibagens {
+    display: flex;
+}
+
+
+  .imagem:hover{
+    filter: hue-rotate(90deg);
+    cursor: pointer;
+  }
+
+.imagens {
+    background-color: white;
+}
+
+.texto1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    color: grey;
+}
+
+.texto2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-mae {
+    display: flex;
+}
+
+.img-wrapper {
+    position: relative;
+}
+.img-bg {
+    cursor: pointer;
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: rgba(50, 205, 50, .5);
+    opacity: 0;
+}
+
+.img-bg:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: #D4D4D4;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 500px 20px 550px;
+}
+
+.rodape a {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    font-size: 9pt;
+}
+
+.rodape a:hover {
+    color: white;
+    cursor: pointer;
+}
